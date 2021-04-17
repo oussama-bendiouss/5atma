@@ -1,0 +1,2 @@
+# 5atma-
+Cette application est très utile surtout pendant Ramadan, et surtout dans cette période à cause du Covid, personne ne va à la mosquée, du coup vous faites la "Tarawih" chez vous, du coup vous essayer de faire de 5atma à la fois, une pour votre prière "Tarawih", autre pour votre lecture journalière . Du coup pour ne pas les mélanger, vous utiliser notre application pour savoir combien de 5atma vous avez fait, en plus pour séparer les deux et progresser dans les deux( voir plus ) au meme temps.
