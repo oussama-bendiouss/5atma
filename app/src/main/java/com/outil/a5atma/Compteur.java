@@ -20,6 +20,7 @@ public class Compteur extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compteur);
+        getSupportActionBar().hide();
         T = findViewById(R.id.centre);
         T.setText("0 حزب");
 
@@ -32,7 +33,7 @@ public class Compteur extends AppCompatActivity {
         if (nombre + l < 60 && nombre + l>=0){
             nombre = nombre + l;
             nb_hezb = nombre;
-            T.setText( nombre + "حزب");
+            T.setText( nombre + "حزب\n");
         }else if(nombre + l == 60){
             T.setText("0 حزب");
             nombre = 0;
@@ -63,7 +64,7 @@ public class Compteur extends AppCompatActivity {
         if (nombre  < 60){
             nombre = nombre ;
             nb_hezb = nombre;
-            T.setText( nombre + "حزب");
+            T.setText( nombre + "حزب\n");
         }else if(nombre == 60){
             T.setText("0 حزب");
             Toast.makeText(this,"Félicitation tu as terminé une 5atma",Toast.LENGTH_LONG).show();
