@@ -1,128 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3f3e"
     tools:context=".Compteur">
+
     <TextView
+        android:id="@+id/centre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:text="5atma"
-        android:id="@+id/centre"
         android:textColor="#333"
         android:textSize="40sp"
-        android:layout_centerInParent="true"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/huit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="incre_decre"
-        android:layout_toRightOf="@id/centre"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="150dp"
         android:tag="+0.125"
-        android:text="+1/8"/>
+        android:text="+1/8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/quatre"
-        android:onClick="incre_decre"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/centre"
-        android:layout_below="@id/huit"
-        android:layout_marginTop="20dp"
-        android:tag="+0.25"
-        android:text="+1/4"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:onClick="incre_decre"
-        android:layout_toRightOf="@id/centre"
-        android:layout_below="@id/quatre"
-        android:layout_marginTop="20dp"
-        android:id="@+id/deux"
-        android:tag="+0.5"
-        android:text="+1/2"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:onClick="incre_decre"
-        android:layout_toRightOf="@id/centre"
-        android:layout_below="@id/deux"
-        android:id="@+id/troishuit"
-        android:layout_marginTop="20dp"
-        android:tag="+0.75"
-        android:text="+3/8"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="incre_decre"
-        android:layout_toRightOf="@id/centre"
-        android:layout_marginLeft="20dp"
-        android:layout_below="@id/troishuit"
-        android:layout_marginTop="20dp"
-        android:tag="+1"
-        android:text="+1"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:onClick="incre_decre"
-        android:layout_marginRight="20dp"
         android:id="@+id/huitm"
-        android:layout_toLeftOf="@id/centre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+
+        android:onClick="incre_decre"
+
         android:tag="-0.125"
-        android:text="-1/8"/>
+        android:text="-1/8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/huit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
     <Button
+        android:id="@+id/quatre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="incre_decre"
+
+        android:tag="+0.25"
+        android:text="+1/4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <Button
         android:id="@+id/quatrem"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
         android:onClick="incre_decre"
-        android:layout_toLeftOf="@id/centre"
-        android:layout_marginRight="20dp"
-        android:layout_below="@id/huitm"
+
         android:tag="-0.25"
-        android:text="-1/4"/>
+        android:text="-1/4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
+
     <Button
+        android:id="@+id/deux"
         android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:onClick="incre_decre"
+        android:tag="+0.5"
+        android:text="+1/2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/centre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <Button
         android:id="@+id/deuxm"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="incre_decre"
-        android:layout_marginTop="20dp"
-        android:layout_toLeftOf="@id/centre"
-        android:layout_marginRight="20dp"
-        android:layout_below="@id/quatrem"
+
         android:tag="-0.5"
-        android:text="-1/2"/>
+        android:text="-1/2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/centre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
     <Button
+        android:id="@+id/troishuit"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+
+        android:onClick="incre_decre"
+
+        android:tag="+0.75"
+        android:text="+3/8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deux"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <Button
         android:id="@+id/troishuitm"
-        android:layout_marginTop="20dp"
-        android:onClick="incre_decre"
-        android:layout_toLeftOf="@id/centre"
-        android:layout_marginRight="20dp"
-        android:layout_below="@id/deuxm"
-        android:tag="-0.75"
-        android:text="-3/8"/>
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_toLeftOf="@id/centre"
+
         android:onClick="incre_decre"
-        android:layout_marginRight="20dp"
-        android:layout_below="@id/troishuitm"
+
+        android:tag="-0.75"
+        android:text="-3/8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deuxm"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="incre_decre"
+        android:tag="+1"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:onClick="incre_decre"
         android:tag="-1"
-        android:text="-1"/>
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
 
 
-
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

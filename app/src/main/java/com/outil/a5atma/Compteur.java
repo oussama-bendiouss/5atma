@@ -38,6 +38,9 @@ public class Compteur extends AppCompatActivity {
             T.setText("0 حزب");
             nombre = 0;
             Toast.makeText(this,"Félicitation tu as terminé une 5atma",Toast.LENGTH_LONG).show();
+            Intent go = new Intent();
+            go.setClass(Compteur.this, Finir_Coran.class);
+            startActivity(go );
         }
 
         Log.i(String.valueOf(nombre) , "emldm");
