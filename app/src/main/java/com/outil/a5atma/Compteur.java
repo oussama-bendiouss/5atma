@@ -16,7 +16,7 @@ public class Compteur extends AppCompatActivity {
    float nb_hezb;
 
 
-    @Override
+    @Override()
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compteur);
