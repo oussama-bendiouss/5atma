@@ -33,11 +33,11 @@ public class Compteur extends AppCompatActivity {
         if (nombre + l < 60 && nombre + l>=0){
             nombre = nombre + l;
             nb_hezb = nombre;
-            T.setText( nombre + "حزب\n");
+            T.setText( nombre + "حزب"+"\n");
         }else if(nombre + l == 60){
             T.setText("0 حزب");
             nombre = 0;
-            Toast.makeText(this,"Félicitation tu as terminé une 5atma",Toast.LENGTH_LONG).show();
+            //Toast.makeText(this,"Félicitation tu as terminé une 5atma",Toast.LENGTH_LONG).show();
             Intent go = new Intent();
             go.setClass(Compteur.this, Finir_Coran.class);
             startActivity(go );
@@ -67,7 +67,7 @@ public class Compteur extends AppCompatActivity {
         if (nombre  < 60){
             nombre = nombre ;
             nb_hezb = nombre;
-            T.setText( nombre + "حزب\n");
+            T.setText( nombre + "حزب"+"\n");
         }else if(nombre == 60){
             T.setText("0 حزب");
             Toast.makeText(this,"Félicitation tu as terminé une 5atma",Toast.LENGTH_LONG).show();

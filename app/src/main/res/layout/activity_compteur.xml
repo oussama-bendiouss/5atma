@@ -59,12 +59,12 @@
 
         android:tag="+0.25"
         android:text="+1/4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/centre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.367" />
+        app:layout_constraintTop_toBottomOf="@+id/huit"
+        app:layout_constraintVertical_bias="0.23" />
 
     <Button
         android:id="@+id/quatrem"
@@ -75,12 +75,12 @@
 
         android:tag="-0.25"
         android:text="-1/4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/centre"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.368" />
+        app:layout_constraintTop_toBottomOf="@+id/huitm"
+        app:layout_constraintVertical_bias="0.23" />
 
     <Button
         android:id="@+id/deux"
@@ -123,12 +123,12 @@
 
         android:tag="+0.75"
         android:text="+3/8"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deux"
-        app:layout_constraintVertical_bias="0.145" />
+        app:layout_constraintTop_toBottomOf="@+id/centre"
+        app:layout_constraintVertical_bias="0.609" />
 
     <Button
         android:id="@+id/troishuitm"
@@ -139,12 +139,12 @@
 
         android:tag="-0.75"
         android:text="-3/8"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deuxm"
-        app:layout_constraintVertical_bias="0.139" />
+        app:layout_constraintVertical_bias="0.632" />
 
     <Button
         android:id="@+id/button5"
