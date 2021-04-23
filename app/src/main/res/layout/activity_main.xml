@@ -5,8 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="#3f3e"
     tools:context=".MainActivity">
  <LinearLayout
+     android:layout_marginLeft="40dp"
+     android:layout_marginRight="40dp"
      android:layout_width="match_parent"
      android:layout_height="match_parent"
     android:orientation="vertical">

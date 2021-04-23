@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_coran_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.5atma">
-        <activity android:name=".Finir_Coran"></activity>
+        <activity android:name=".Finish_coran_in"></activity>
+        <activity android:name=".Principale" />
+        <activity android:name=".Finir_Coran" />
         <activity android:name=".Compteur" />
         <activity android:name=".Into">
             <intent-filter>
