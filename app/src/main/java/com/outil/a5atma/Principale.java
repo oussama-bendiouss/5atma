@@ -18,21 +18,29 @@ public class Principale extends AppCompatActivity {
         String tag = view.getTag().toString();
         switch (tag){
             case "1":
-                Intent goone = new Intent();
-                goone.setClass(Principale.this,MainActivity.class);
-                startActivity(goone);
+                Intent goOne = new Intent();
+                goOne.setClass(Principale.this,MainActivity.class);
+                startActivity(goOne);
                 break;
             case "2":
+                Intent goTwo = new Intent();
+                goTwo.setClass(Principale.this,How_to_finish.class);
+                startActivity(goTwo);
                 break;
             case "3":
+                Intent goThree = new Intent();
+                goThree.setClass(Principale.this,Saba7.class);
+                startActivity(goThree);
                 break;
             case "4":
+                Intent goFour = new Intent();
+                goFour.setClass(Principale.this,Masa2.class);
+                startActivity(goFour);
                 break;
             case "5":
-
-                Intent gofive = new Intent();
-                gofive.setClass(Principale.this,Youtube.class);
-                startActivity(gofive);
+                Intent goFive= new Intent();
+                goFive.setClass(Principale.this,Youtube.class);
+                startActivity(goFive);
                 break;
         }
     }

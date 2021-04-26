@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f3e"
+    tools:context=".How_to_finish">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="20dp"
+    android:textColor="#000000"
+    android:text="كيف يمكنك ختم القرآن عدة مرات في شهر واحد؟"
+    android:textSize="30sp"/>
+</RelativeLayout>

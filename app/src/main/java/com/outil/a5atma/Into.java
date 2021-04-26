@@ -20,6 +20,6 @@ public class Into extends AppCompatActivity {
                 startActivity(i);
                 finish();
             }
-        },2000);
+        },1000);
     }
 }
