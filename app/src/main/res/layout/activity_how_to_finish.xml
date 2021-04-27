@@ -7,6 +7,7 @@
     android:background="#3f3e"
     tools:context=".How_to_finish">
 <TextView
+    android:id="@+id/question"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
@@ -16,4 +17,65 @@
     android:textColor="#000000"
     android:text="كيف يمكنك ختم القرآن عدة مرات في شهر واحد؟"
     android:textSize="30sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/une"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/question"
+        android:layout_marginTop="60dp"
+        android:textSize="25sp"
+        android:tag="1"
+        android:onClick="how_many"
+        android:text="ختم القرآن مرة واحد"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deux"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/une"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:tag="2"
+        android:onClick="how_many"
+        android:text="ختم القرآن مرتان"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trois"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/deux"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:tag="3"
+        android:onClick="how_many"
+        android:text="ختم القرآن ثلات مرات"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quatre"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/trois"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:tag="4"
+        android:onClick="how_many"
+        android:text="ختم القرآن أربع مرات"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cinq"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@id/quatre"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:tag="5"
+        android:onClick="how_many"
+        android:text="ختم القرآن خمس مرات"/>
+
 </RelativeLayout>
