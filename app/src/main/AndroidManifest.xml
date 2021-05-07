@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_coran_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.5atma">
-        <activity android:name=".How_to_finish"></activity>
+        <activity android:name=".Coran"></activity>
+        <activity android:name=".How_to_finish" />
         <activity android:name=".Masa2" />
         <activity android:name=".Saba7" />
         <activity android:name=".Youtube" />

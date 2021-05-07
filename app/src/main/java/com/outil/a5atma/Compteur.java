@@ -38,6 +38,9 @@ public class Compteur extends AppCompatActivity {
             T.setText("0 حزب");
             nombre = 0;
             //Toast.makeText(this,"Félicitation tu as terminé une 5atma",Toast.LENGTH_LONG).show();
+            Intent nb = new Intent();
+            nb.setClass(Compteur.this, MainActivity.class);
+            nb.putExtra("nombre_de_5atma",1);
             Intent go = new Intent();
             go.setClass(Compteur.this, Finir_Coran.class);
             startActivity(go );
