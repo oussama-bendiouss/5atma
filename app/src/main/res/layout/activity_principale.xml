@@ -92,4 +92,21 @@
             android:onClick="gotoactivity"
             android:text=" ثقف نفسك"/>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/b6"
+        android:layout_marginRight="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/b5"
+        android:orientation="horizontal">
+        <Button
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="6"
+            android:onClick="gotoactivity"
+            android:text=" القرآن الكريم"/>
+    </LinearLayout>
 </RelativeLayout>

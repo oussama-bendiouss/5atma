@@ -42,6 +42,10 @@ public class Principale extends AppCompatActivity {
                 goFive.setClass(Principale.this,Youtube.class);
                 startActivity(goFive);
                 break;
+            case "6":
+                Intent goSix = new Intent();
+                goSix.setClass(Principale.this,Coran.class);
+                startActivity(goSix);
         }
     }
 }
